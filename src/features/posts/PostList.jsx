@@ -9,10 +9,10 @@ const emoji = {
 };
 
 function PostList({ post }) {
-  const emojiList = Object.entries(emoji).map(([name, emoji]) => {
+  const emojiList = Object.entries(emoji).map(([key, value]) => {
     return (
       <button className="ml-2">
-        {emoji} {post.reactions[name]}
+        {value} {post.reactions[key]}
       </button>
     );
   });

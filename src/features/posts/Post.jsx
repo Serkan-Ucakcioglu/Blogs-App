@@ -4,14 +4,10 @@ import PostList from "./PostList";
 
 function Post() {
   const { data } = useGetPostsQuery();
-  return (
-    <>
-      {data?.map((post) => {
-        return <PostList key={post.id} post={post} />;
-      })}
-      <div>{JSON.stringify(data)}</div>
-    </>
-  );
+  const content = data?.map((post) => {
+    return <PostList key={post.id} post={post} />;
+  });
+  return <div className="flex flex-col">{content}</div>;
 }
 
 export default Post;
