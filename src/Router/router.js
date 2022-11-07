@@ -4,14 +4,14 @@ import {
   Route,
 } from "react-router-dom";
 import Layout from "../Views/Layout";
-import PostList from "../features/posts/PostList";
-import Post from "../features/posts/Post";
+import NewPostPage from "../Views/NewPostPage";
+import PostList from "../Views/PostList";
 
 export const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
-      <Route index element={<Post />} />
-      <Route path="post-list" element={<PostList />} />
+      <Route index element={<PostList />} />
+      <Route path="new-post" element={<NewPostPage />} />
     </Route>
   )
 );

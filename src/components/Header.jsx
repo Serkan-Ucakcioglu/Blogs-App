@@ -10,7 +10,7 @@ function Header() {
           Home
         </Link>
         <Link
-          to="post-list"
+          to="new-post"
           className="ml-2 mr-2 text-xl text-white font-extrabold"
         >
           Post

@@ -1,13 +1,13 @@
-{ 
+{
   "posts": [
     {
       "id": 5,
-      "title": "nesciunt quas odio",
-      "body": "Hello there!",
+      "title": "My Name is Serkan",
+      "body": "Herkese Selamlar!",
       "userId": 1,
-      "date": "2022-04-14T17:46:43.450Z",
+      "date": "07.11.2022",
       "reactions": {
-        "thumbsUp": 5,
+        "thumbsUp": 1,
         "wow": 0,
         "heart": 0,
         "rocket": 0,

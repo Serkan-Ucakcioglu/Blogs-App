@@ -21,7 +21,7 @@ function PostList({ post }) {
       <div className="flex flex-col justify-center items-center w-80 h-48 bg-red-500 font-extrabold text-white rounded">
         <h1>{post?.title}</h1>
         <span>{post?.body}</span>
-        <span>{post?.date}</span>
+        <span>🕑 {post?.date}</span>
         <div className="flex ">{emojiList}</div>
       </div>
     </>
