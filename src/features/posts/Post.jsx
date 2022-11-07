@@ -1,14 +1,15 @@
 import React from "react";
 import { useGetPostsQuery } from "./postSlice";
+import PostList from "./PostList";
 
 function Post() {
   const { data } = useGetPostsQuery();
-  console.log(data, "data");
   return (
     <>
-      {data?.map((ser) => {
-        return <div>{JSON.stringify(ser)}</div>;
+      {data?.map((post) => {
+        return <PostList key={post.id} post={post} />;
       })}
+      <div>{JSON.stringify(data)}</div>
     </>
   );
 }
