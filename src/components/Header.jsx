@@ -11,7 +11,7 @@ function Header() {
         </Link>
         <Link
           to="new-post"
-          className="ml-2 mr-2 text-xl text-white font-extrabold"
+          className="ml-4 mr-2 text-xl text-white font-extrabold"
         >
           Post
         </Link>
