@@ -1,0 +1,18 @@
+{ 
+  "posts": [
+    {
+      "id": 5,
+      "title": "nesciunt quas odio",
+      "body": "Hello there!",
+      "userId": 1,
+      "date": "2022-04-14T17:46:43.450Z",
+      "reactions": {
+        "thumbsUp": 5,
+        "wow": 0,
+        "heart": 0,
+        "rocket": 0,
+        "coffee": 0
+      }
+    }
+  ]
+}
