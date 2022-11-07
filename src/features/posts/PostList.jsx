@@ -18,7 +18,7 @@ function PostList({ post }) {
   });
   return (
     <>
-      <div className="flex flex-col">
+      <div className="flex flex-col w-80 bg-red-500 rounded">
         <h1>{post?.title}</h1>
         <span>{post?.body}</span>
         <span>{post?.date}</span>

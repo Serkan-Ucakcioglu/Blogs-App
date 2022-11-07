@@ -7,7 +7,7 @@ function Post() {
   const content = data?.map((post) => {
     return <PostList key={post.id} post={post} />;
   });
-  return <div className="flex flex-col">{content}</div>;
+  return <div className="flex flex-col items-center mt-5">{content}</div>;
 }
 
 export default Post;
