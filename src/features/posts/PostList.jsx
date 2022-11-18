@@ -1,4 +1,5 @@
 import React from "react";
+import { useAddReactionMutation } from "./postSlice";
 
 const emoji = {
   thumbsUp: "👍",
@@ -9,9 +10,18 @@ const emoji = {
 };
 
 function PostList({ post }) {
+  const [addReaction] = useAddReactionMutation();
   const emojiList = Object.entries(emoji).map(([key, value]) => {
     return (
-      <button className="ml-2">
+      <button
+        className="ml-2"
+        onClick={() => {
+          addReaction({
+            id: post.id,
+            reactions: { ...post.reactions, [key]: post.reactions[key] + 1 },
+          });
+        }}
+      >
         {value} {post.reactions[key]}
       </button>
     );
