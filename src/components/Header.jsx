@@ -4,7 +4,9 @@ import { Link } from "react-router-dom";
 function Header() {
   return (
     <header className="bg-violet-600 h-20 p-5 flex justify-between items-center">
-      <h1 className="text-white text-2xl font-extrabold">Blog Apps</h1>
+      <Link to="/" className="text-white text-2xl font-extrabold">
+        Blog Apps
+      </Link>
       <div className="flex mr-6">
         <Link to="/" className="text-white text-xl font-extrabold">
           Home
