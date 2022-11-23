@@ -20,7 +20,7 @@
       "body": "serkan test message !",
       "id": 1669205861090,
       "reactions": {
-        "thumbsUp": 0,
+        "thumbsUp": 2,
         "wow": 0,
         "heart": 0,
         "rocket": 0,
@@ -46,7 +46,7 @@
       "body": "serkan testing ",
       "id": 1669206002067,
       "reactions": {
-        "thumbsUp": 0,
+        "thumbsUp": 2,
         "wow": 0,
         "heart": 0,
         "rocket": 0,
@@ -73,6 +73,19 @@
       "id": 1669206047644,
       "reactions": {
         "thumbsUp": 4,
+        "wow": 0,
+        "heart": 0,
+        "rocket": 0,
+        "coffee": 0
+      }
+    },
+    {
+      "title": "serkan",
+      "date": "2022-11-23T12:24:13.488Z",
+      "body": "serkan can test",
+      "id": 1669206253488,
+      "reactions": {
+        "thumbsUp": 0,
         "wow": 0,
         "heart": 0,
         "rocket": 0,

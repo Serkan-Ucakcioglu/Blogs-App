@@ -12,8 +12,8 @@ function NewPost() {
     addPost(data);
   };
   return (
-    <div className="w-full flex justify-center">
-      <form onSubmit={handleSubmit(onSubmit)}>
+    <div className="w-full flex justify-center mt-5">
+      <form onSubmit={handleSubmit(onSubmit)} className="w-96">
         <div className="flex flex-col">
           <label htmlFor="title">Title</label>
           <input
@@ -23,22 +23,23 @@ function NewPost() {
               minLength: { value: 4, message: "Minimum Length 4!" },
               maxLength: { value: 12, message: "Maximum length 12!" },
             })}
+            placeholder="title..."
             id="title"
-            className="border-2 border-black rounded p-2"
+            className="border-2 pl-3 border-black rounded p-2"
           />
           <div className="text-left text-red-500">{errors?.title?.message}</div>
         </div>
-        <div className="flex flex-col">
+        <div className="flex flex-col mt-2">
           <label htmlFor="date">date</label>
           <input
             type="date"
             {...register("date", { required: "required!" })}
             id="date"
-            className="border-2 border-black rounded p-2"
+            className="border-2 pl-3 border-black rounded p-2"
           />
           <div className="text-left text-red-500">{errors?.date?.message}</div>
         </div>
-        <div className="flex flex-col">
+        <div className="flex flex-col mt-2">
           <label htmlFor="body">Title</label>
           <textarea
             type="text"
@@ -48,13 +49,14 @@ function NewPost() {
               maxLength: { value: 35, message: "Maximum length 35!" },
             })}
             id="body"
-            className="border-2 border-black rounded p-2"
+            placeholder="body..."
+            className="border-2 pl-3 border-black rounded p-2"
           />
           <div className="text-left text-red-500">{errors?.body?.message}</div>
         </div>
         <button
           type="submit"
-          className="bg-blue-500 mt-2 w-full rounded text-white p-2"
+          className="bg-blue-500 mt-3 w-full rounded text-white p-2"
         >
           Add
         </button>
