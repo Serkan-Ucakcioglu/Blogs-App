@@ -1,4 +1,5 @@
 import { useForm } from "react-hook-form";
+import { useGetUsersQuery } from "../users/usersSlice";
 import { useAddPostMutation } from "./postSlice";
 
 function NewPost() {
@@ -8,9 +9,14 @@ function NewPost() {
     formState: { errors },
   } = useForm();
   const [addPost] = useAddPostMutation();
+  const { data: users } = useGetUsersQuery();
   const onSubmit = (data) => {
     addPost(data);
   };
+
+  const selectContent = users?.map((user) => {
+    return <option value={user?.name}>{user?.name}</option>;
+  });
   return (
     <div className="w-full flex justify-center mt-5">
       <form onSubmit={handleSubmit(onSubmit)} className="w-96">
@@ -29,7 +35,16 @@ function NewPost() {
           />
           <div className="text-left text-red-500">{errors?.title?.message}</div>
         </div>
-        <div className="flex flex-col mt-2">
+        <div className="flex flex-col mt-3">
+          <label htmlFor="Users">Users</label>
+          <select id="Users" className="border-black border-2 p-2 rounded mt-2">
+            <option value="" selected>
+              Choose
+            </option>
+            {selectContent}
+          </select>
+        </div>
+        <div className="flex flex-col mt-3">
           <label htmlFor="date">Date</label>
           <input
             type="date"
@@ -39,7 +54,7 @@ function NewPost() {
           />
           <div className="text-left text-red-500">{errors?.date?.message}</div>
         </div>
-        <div className="flex flex-col mt-2">
+        <div className="flex flex-col mt-3">
           <label htmlFor="body">Body</label>
           <textarea
             type="text"
@@ -56,7 +71,7 @@ function NewPost() {
         </div>
         <button
           type="submit"
-          className="bg-blue-500 mt-3 w-full rounded text-white p-2"
+          className="bg-blue-500 mt-5 w-full rounded text-white p-2"
         >
           Add
         </button>
