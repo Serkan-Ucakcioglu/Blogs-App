@@ -28,7 +28,7 @@ function PostList({ post }) {
   });
   return (
     <>
-      <div className="flex flex-col mt-3 justify-center items-center w-80 h-48 bg-red-500 font-extrabold text-white rounded">
+      <div className="flex flex-col mt-3 justify-center items-center w-80 h-48 bg-gray-500 font-extrabold text-white rounded">
         <h1>{post?.title}</h1>
         <div className="flex flex-row">👥 - {post?.user}</div>
         <span>{post?.body}</span>
