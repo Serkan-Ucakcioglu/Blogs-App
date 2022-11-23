@@ -30,7 +30,7 @@ function NewPost() {
           <div className="text-left text-red-500">{errors?.title?.message}</div>
         </div>
         <div className="flex flex-col mt-2">
-          <label htmlFor="date">date</label>
+          <label htmlFor="date">Date</label>
           <input
             type="date"
             {...register("date", { required: "required!" })}
@@ -40,7 +40,7 @@ function NewPost() {
           <div className="text-left text-red-500">{errors?.date?.message}</div>
         </div>
         <div className="flex flex-col mt-2">
-          <label htmlFor="body">Title</label>
+          <label htmlFor="body">Body</label>
           <textarea
             type="text"
             {...register("body", {
