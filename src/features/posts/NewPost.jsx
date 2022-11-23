@@ -6,12 +6,14 @@ function NewPost() {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm();
   const [addPost] = useAddPostMutation();
   const { data: users } = useGetUsersQuery();
   const onSubmit = (data) => {
     addPost(data);
+    reset();
   };
 
   const selectContent = users?.map((user) => {
@@ -27,7 +29,7 @@ function NewPost() {
             {...register("title", {
               required: "required",
               minLength: { value: 4, message: "Minimum Length 4!" },
-              maxLength: { value: 12, message: "Maximum length 12!" },
+              maxLength: { value: 15, message: "Maximum length 12!" },
             })}
             placeholder="title..."
             id="title"
@@ -37,11 +39,18 @@ function NewPost() {
         </div>
         <div className="flex flex-col mt-3">
           <label htmlFor="Users">Users</label>
-          <select id="Users" className="border-black border-2 p-2 rounded mt-2">
+          <select
+            {...register("user", { required: "required" })}
+            id="Users"
+            className="border-black border-2 p-2 rounded mt-2"
+          >
             <option value="" selected>
               Choose
             </option>
             {selectContent}
+            <div className="text-left text-red-500">
+              {errors?.user?.message}
+            </div>
           </select>
         </div>
         <div className="flex flex-col mt-3">

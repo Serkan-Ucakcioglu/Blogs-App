@@ -234,9 +234,38 @@
   "posts": [
     {
       "title": "serkan",
-      "date": "2022-11-23T12:24:13.488Z",
-      "body": "serkan can test",
-      "id": 1669206253488,
+      "user": "Ervin Howell",
+      "date": "2022-11-23T12:38:54.229Z",
+      "body": "ervin howell",
+      "id": 1669207134229,
+      "reactions": {
+        "thumbsUp": 0,
+        "wow": 0,
+        "heart": 0,
+        "rocket": 0,
+        "coffee": 0
+      }
+    },
+    {
+      "title": "serkan",
+      "user": "Nicholas Runolfsdottir V",
+      "date": "2022-11-23T12:41:02.518Z",
+      "body": "serkan sdasd",
+      "id": 1669207262518,
+      "reactions": {
+        "thumbsUp": 2,
+        "wow": 0,
+        "heart": 0,
+        "rocket": 0,
+        "coffee": 0
+      }
+    },
+    {
+      "title": "users",
+      "user": "Leanne Graham",
+      "date": "2022-11-23T12:41:49.233Z",
+      "body": "sadasdasdasd",
+      "id": 1669207309233,
       "reactions": {
         "thumbsUp": 0,
         "wow": 0,
