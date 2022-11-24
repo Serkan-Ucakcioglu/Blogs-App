@@ -19,7 +19,10 @@ function UserPost() {
   const postList = posts?.map((user, i) => {
     return (
       <li>
-        <Link className="underline text-xl font-medium">
+        <Link
+          to={`/postdetail/${user.id}`}
+          className="underline text-xl font-medium"
+        >
           {i + 1}. {user.title}
         </Link>
       </li>
@@ -31,7 +34,7 @@ function UserPost() {
         {users?.name} Post List
       </h1>
       <ul className="mt-3 flex flex-col">
-        {postList} {!posts.length && <div className="text-xl">No Post!</div>}
+        {postList} {!posts?.length && <div className="text-xl">No Post!</div>}
       </ul>
     </div>
   );

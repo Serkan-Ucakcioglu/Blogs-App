@@ -17,7 +17,6 @@ function PostList({ post }) {
       data: data?.find((user) => user.id === Number(post.userid)),
     }),
   });
-  console.log(data);
 
   const emojiList = Object.entries(emoji).map(([key, value]) => {
     return (
