@@ -1,4 +1,5 @@
 import React from "react";
+import { useGetUsersQuery } from "../users/usersSlice";
 import { useAddReactionMutation } from "./postSlice";
 
 const emoji = {
@@ -11,6 +12,13 @@ const emoji = {
 
 function PostList({ post }) {
   const [addReaction] = useAddReactionMutation();
+  const { data } = useGetUsersQuery("getUsers", {
+    selectFromResult: ({ data }) => ({
+      data: data?.find((user) => user.id === Number(post.userid)),
+    }),
+  });
+  console.log(data);
+
   const emojiList = Object.entries(emoji).map(([key, value]) => {
     return (
       <button
@@ -30,7 +38,7 @@ function PostList({ post }) {
     <>
       <div className="flex flex-col mt-3 justify-center items-center w-80 h-48 bg-gray-500 font-extrabold text-white rounded">
         <h1>{post?.title}</h1>
-        <div className="flex flex-row">👥 - {post?.user}</div>
+        <div className="flex flex-row">👥 - {data?.name}</div>
         <span>{post?.body}</span>
         <span>🕑 {post?.date}</span>
         <div className="flex ">{emojiList}</div>

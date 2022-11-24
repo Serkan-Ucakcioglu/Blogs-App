@@ -17,7 +17,7 @@ function NewPost() {
   };
 
   const selectContent = users?.map((user) => {
-    return <option value={user?.name}>{user?.name}</option>;
+    return <option value={user?.id}>{user?.name}</option>;
   });
   return (
     <div className="w-full flex justify-center mt-5">
@@ -40,7 +40,7 @@ function NewPost() {
         <div className="flex flex-col mt-3">
           <label htmlFor="Users">Users</label>
           <select
-            {...register("user", { required: "required" })}
+            {...register("userid", { required: "required" })}
             id="Users"
             className="border-black border-2 p-2 rounded mt-2"
           >

@@ -233,55 +233,27 @@
   ],
   "posts": [
     {
-      "title": "serkan",
-      "user": "Ervin Howell",
-      "date": "2022-11-23T12:38:54.229Z",
-      "body": "ervin howell",
-      "id": 1669207134229,
-      "reactions": {
-        "thumbsUp": 1,
-        "wow": 0,
-        "heart": 1,
-        "rocket": 0,
-        "coffee": 0
-      }
-    },
-    {
-      "title": "serkan",
-      "user": "Nicholas Runolfsdottir V",
-      "date": "2022-11-23T12:41:02.518Z",
-      "body": "serkan sdasd",
-      "id": 1669207262518,
-      "reactions": {
-        "thumbsUp": 2,
-        "wow": 0,
-        "heart": 1,
-        "rocket": 0,
-        "coffee": 0
-      }
-    },
-    {
-      "title": "users",
-      "user": "Leanne Graham",
-      "date": "2022-11-23T12:41:49.233Z",
-      "body": "sadasdasdasd",
-      "id": 1669207309233,
+      "title": "serkan tes",
+      "userid": "1",
+      "date": "2022-11-24T20:08:12.873Z",
+      "body": "serkan testing ",
+      "id": 1669320492873,
       "reactions": {
         "thumbsUp": 0,
         "wow": 0,
-        "heart": 1,
+        "heart": 0,
         "rocket": 0,
         "coffee": 0
       }
     },
     {
-      "title": "nice day !",
-      "user": "Patricia Lebsack",
-      "date": "2022-11-23T14:19:47.502Z",
-      "body": "I living ankara !",
-      "id": 1669213187502,
+      "title": "ser23",
+      "userid": "1",
+      "date": "2022-11-24T20:17:56.974Z",
+      "body": "serkan ajsdjasd",
+      "id": 1669321076974,
       "reactions": {
-        "thumbsUp": 1,
+        "thumbsUp": 0,
         "wow": 0,
         "heart": 0,
         "rocket": 0,

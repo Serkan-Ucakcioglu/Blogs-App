@@ -1,11 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { useGetUsersQuery } from "./usersSlice";
 
 function UsersPage() {
-  const { data: users, isError, isLoading } = useGetUsersQuery();
+  const { data: users, isError, isLoading } = useGetUsersQuery("getUsers");
   const usersContent = users?.map((user, i) => (
-    <li className="mb-2 text-xl text-black font-extrabold">
-      {i + 1}. {user?.name}
+    <li className="mb-2 text-xl text-black font-extrabold" key={user?.id}>
+      <Link className="underline" to={`/user/${user?.id}`}>
+        {i + 1}. {user?.name}
+      </Link>
     </li>
   ));
 

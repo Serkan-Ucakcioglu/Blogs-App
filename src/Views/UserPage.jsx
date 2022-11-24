@@ -1,10 +1,10 @@
 import React from "react";
-import UsersPage from "../features/users/UsersPage";
+import UsersList from "../features/users/UsersList";
 
 function UserPage() {
   return (
     <>
-      <UsersPage />
+      <UsersList />
     </>
   );
 }
