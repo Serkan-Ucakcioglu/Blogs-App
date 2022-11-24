@@ -7,7 +7,7 @@ function Header() {
       <Link to="/" className="text-white text-2xl font-extrabold">
         Blog Apps
       </Link>
-      <div className="flex mr-6">
+      <div className="flex mr-6 items-center">
         <Link to="/" className="text-white text-xl font-extrabold">
           Home
         </Link>
