@@ -17,6 +17,12 @@ function Header() {
         >
           Post
         </Link>
+        <Link
+          to="/users"
+          className="ml-4 mr-2 text-xl text-white font-extrabold"
+        >
+          Users
+        </Link>
       </div>
     </header>
   );

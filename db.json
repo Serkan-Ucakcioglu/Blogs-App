@@ -239,7 +239,7 @@
       "body": "ervin howell",
       "id": 1669207134229,
       "reactions": {
-        "thumbsUp": 0,
+        "thumbsUp": 1,
         "wow": 0,
         "heart": 1,
         "rocket": 0,
@@ -270,6 +270,20 @@
         "thumbsUp": 0,
         "wow": 0,
         "heart": 1,
+        "rocket": 0,
+        "coffee": 0
+      }
+    },
+    {
+      "title": "nice day !",
+      "user": "Patricia Lebsack",
+      "date": "2022-11-23T14:19:47.502Z",
+      "body": "I living ankara !",
+      "id": 1669213187502,
+      "reactions": {
+        "thumbsUp": 1,
+        "wow": 0,
+        "heart": 0,
         "rocket": 0,
         "coffee": 0
       }
