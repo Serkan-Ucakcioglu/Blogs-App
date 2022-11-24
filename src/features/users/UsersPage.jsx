@@ -9,7 +9,7 @@ function UsersPage() {
 
   return (
     <div className="w-full flex justify-center mt-5">
-      <ul>
+      <ul className="flex flex-col items-start">
         {users?.map((user, i) => (
           <li className="mb-2 text-xl text-black font-extrabold">
             {i + 1}. {user?.name}
