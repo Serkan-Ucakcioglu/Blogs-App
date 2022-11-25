@@ -36,16 +36,13 @@ function PostList({ post }) {
   });
   return (
     <>
-      <Link
-        to={`postdetail/${post.id}`}
-        className="flex flex-col mt-3 justify-center items-center w-80 h-48 bg-gray-500 font-extrabold text-white rounded"
-      >
+      <div className="flex flex-col mt-3 justify-center items-center w-80 h-48 bg-gray-500 font-extrabold text-white rounded">
         <h1>{post?.title}</h1>
         <div className="flex flex-row">👥 - {data?.name}</div>
         <span>{post?.body}</span>
         <span>🕑 {post?.date}</span>
         <div className="flex ">{emojiList}</div>
-      </Link>
+      </div>
     </>
   );
 }
