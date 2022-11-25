@@ -1,5 +1,5 @@
 import { useForm } from "react-hook-form";
-import { useGetUsersQuery } from "../users/usersSlice";
+import { useGetUsersQuery } from "../Users/usersSlice";
 import { useAddPostMutation } from "./postSlice";
 
 function NewPost() {

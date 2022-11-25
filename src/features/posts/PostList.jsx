@@ -1,5 +1,5 @@
 import React from "react";
-import { useGetUsersQuery } from "../users/usersSlice";
+import { useGetUsersQuery } from "../Users/usersSlice";
 import { useAddReactionMutation } from "./postSlice";
 
 const emoji = {

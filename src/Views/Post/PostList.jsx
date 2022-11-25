@@ -1,5 +1,5 @@
 import React from "react";
-import Post from "../../features/posts/Post";
+import Post from "../../Features/Posts/Post";
 
 function PostList() {
   return (

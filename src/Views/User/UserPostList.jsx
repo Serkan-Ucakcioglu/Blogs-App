@@ -1,5 +1,5 @@
 import React from "react";
-import UserPost from "../../features/users/UserPost";
+import UserPost from "../../Features/Users/UserPost";
 
 function UserPostList() {
   return (

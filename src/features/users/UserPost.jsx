@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
-import { useGetPostsQuery } from "../posts/postSlice";
+import { useGetPostsQuery } from "../Posts/postSlice";
 import { useGetUsersQuery } from "./usersSlice";
 
 function UserPost() {

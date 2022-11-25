@@ -1,5 +1,5 @@
 import React from "react";
-import PostDetail from "../../features/posts/PostDetail";
+import PostDetail from "../../Features/Posts/PostDetail";
 
 function PostDetailPage() {
   return (

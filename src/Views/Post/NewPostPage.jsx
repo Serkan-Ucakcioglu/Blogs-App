@@ -1,5 +1,5 @@
 import React from "react";
-import NewPost from "../../features/posts/NewPost";
+import NewPost from "../../Features/Posts/NewPost";
 
 function NewPostPage() {
   return (
