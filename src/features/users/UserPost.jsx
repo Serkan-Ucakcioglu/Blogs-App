@@ -35,19 +35,14 @@ function UserPost() {
         {users?.name} Post List
       </h1>
       <ul className="mt-3 flex flex-col">
-        {postList}{" "}
-        {!posts?.length && (
-          <>
-            <div className="text-xl">No Post!</div>
-            <button
-              className="mt-5 border border-black rounded"
-              onClick={() => navigate(-1)}
-            >
-              Go Back
-            </button>
-          </>
-        )}
+        {postList} {!posts?.length && <div className="text-xl">No Post!</div>}
       </ul>
+      <button
+        className="mt-5 border border-black rounded p-2"
+        onClick={() => navigate(-1)}
+      >
+        Go Back
+      </button>
     </div>
   );
 }
