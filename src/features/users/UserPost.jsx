@@ -1,10 +1,11 @@
 import React from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import { useGetPostsQuery } from "../posts/postSlice";
 import { useGetUsersQuery } from "./usersSlice";
 
 function UserPost() {
   const { userid } = useParams();
+  const navigate = useNavigate();
   const { data: posts } = useGetPostsQuery("getUsers", {
     selectFromResult: ({ data }) => ({
       data: data?.filter((users) => Number(users?.userid) === Number(userid)),
@@ -34,7 +35,18 @@ function UserPost() {
         {users?.name} Post List
       </h1>
       <ul className="mt-3 flex flex-col">
-        {postList} {!posts?.length && <div className="text-xl">No Post!</div>}
+        {postList}{" "}
+        {!posts?.length && (
+          <>
+            <div className="text-xl">No Post!</div>
+            <button
+              className="mt-5 border border-black rounded"
+              onClick={() => navigate(-1)}
+            >
+              Go Back
+            </button>
+          </>
+        )}
       </ul>
     </div>
   );
