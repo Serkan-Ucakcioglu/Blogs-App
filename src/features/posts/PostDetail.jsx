@@ -13,7 +13,7 @@ function PostDetail() {
   return (
     <div className="flex flex-col items-center mt-5">
       {data.map((post) => (
-        <PostList post={post} />
+        <PostList post={post} key={post.id} />
       ))}
     </div>
   );
