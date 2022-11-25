@@ -3,13 +3,13 @@ import {
   createRoutesFromElements,
   Route,
 } from "react-router-dom";
-import ErrorPage from "../Views/ErrorPage";
 import Layout from "../Views/Layout";
-import NewPostPage from "../Views/NewPostPage";
-import PostList from "../Views/PostList";
-import UserPage from "../Views/UserPage";
-import UserPostList from "../Views/UserPostList";
-import PostDetailPage from "../Views/PostDetailPage";
+import NewPostPage from "../Views/Post/NewPostPage";
+import PostDetailPage from "../Views/Post/PostDetailPage";
+import PostList from "../Views/Post/PostList";
+import UserPage from "../Views/User/UserPage";
+import UserPostList from "../Views/User/UserPostList";
+import ErrorPage from "../Views/ErrorPage";
 
 export const router = createBrowserRouter(
   createRoutesFromElements(

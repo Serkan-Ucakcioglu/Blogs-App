@@ -1,5 +1,5 @@
 import React from "react";
-import UsersList from "../features/users/UsersList";
+import UsersList from "../../features/users/UsersList";
 
 function UserPage() {
   return (
