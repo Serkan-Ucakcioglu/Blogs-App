@@ -1,6 +1,6 @@
 ### To start the project
 npm or yarn install <br>
-json-server --watch db.json
+json-server --watch db.json --port 3500
 yarn start
 
 ### Home Page
