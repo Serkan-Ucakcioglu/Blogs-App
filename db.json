@@ -241,9 +241,9 @@
       "reactions": {
         "thumbsUp": 3,
         "wow": 0,
-        "heart": 1,
+        "heart": 3,
         "rocket": 0,
-        "coffee": 0
+        "coffee": 4
       }
     },
     {
@@ -257,7 +257,7 @@
         "wow": 1,
         "heart": 1,
         "rocket": 0,
-        "coffee": 0
+        "coffee": 5
       }
     },
     {
@@ -267,11 +267,11 @@
       "body": "serkan test message!",
       "id": 1669368011842,
       "reactions": {
-        "thumbsUp": 0,
+        "thumbsUp": 3,
         "wow": 0,
         "heart": 0,
         "rocket": 0,
-        "coffee": 0
+        "coffee": 3
       }
     }
   ]

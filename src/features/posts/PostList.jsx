@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { useGetUsersQuery } from "../users/usersSlice";
 import { useAddReactionMutation } from "./postSlice";
 
