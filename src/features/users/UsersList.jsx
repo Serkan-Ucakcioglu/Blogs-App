@@ -14,7 +14,6 @@ function UsersPage() {
 
   if (isLoading) return <div>Loading Users List....</div>;
   if (isError) return <div>Errors...</div>;
-
   return (
     <div className="w-full flex justify-center mt-5">
       <ul className="flex flex-col items-start">{usersContent}</ul>
