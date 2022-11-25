@@ -1,3 +1,10 @@
+### To start the project
+npm or yarn install
+npm install -g json-server
+yarn add -g json-server
+
+json-server --watch db.json
+yarn start
 
 ### Home Page
 <img width="1800" alt="image" src="https://user-images.githubusercontent.com/98692987/203945240-1c4f2a12-3ca5-400c-b560-b27212066b88.png">
