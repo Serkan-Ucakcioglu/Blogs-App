@@ -1,7 +1,7 @@
 ### To start the project
-npm or yarn install
-npm install -g json-server
-yarn add -g json-server
+npm or yarn install <br>
+npm install -g json-server <br>
+yarn add -g json-server <br>
 
 json-server --watch db.json
 yarn start
