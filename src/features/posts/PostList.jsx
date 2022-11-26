@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { useGetUsersQuery } from "../users/usersSlice";
 import { useAddReactionMutation } from "./postSlice";
 
@@ -39,7 +40,10 @@ function PostList({ post }) {
         <h1>{post?.title}</h1>
         <div className="flex flex-row">👥 - {data?.name}</div>
         <span>{post?.body.substring(0, 8)}...</span>
-        <span>🕑 {post?.date}</span>
+        <span>🕑 {post?.date.substring(0, 10)}</span>
+        <Link to={`postdetail/${post.id}`} className="underline p-2">
+          View Post
+        </Link>
         <div className="flex ">{emojiList}</div>
       </div>
     </>

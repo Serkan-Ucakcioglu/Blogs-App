@@ -12,7 +12,15 @@ function NewPost() {
   const [addPost] = useAddPostMutation();
   const { data: users } = useGetUsersQuery();
   const onSubmit = (data) => {
-    addPost(data);
+    const date = new Date();
+    const dates = date.toLocaleDateString();
+
+    const req = {
+      ...data,
+      date: dates,
+    };
+    console.log(req, "dates");
+    addPost(req);
     reset();
   };
 
@@ -53,16 +61,7 @@ function NewPost() {
             </div>
           </select>
         </div>
-        <div className="flex flex-col mt-3">
-          <label htmlFor="date">Date</label>
-          <input
-            type="date"
-            {...register("date", { required: "required!" })}
-            id="date"
-            className="border-2 pl-3 border-black rounded p-2"
-          />
-          <div className="text-left text-red-500">{errors?.date?.message}</div>
-        </div>
+
         <div className="flex flex-col mt-3">
           <label htmlFor="body">Body</label>
           <textarea
