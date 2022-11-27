@@ -56,14 +56,12 @@ function NewPost() {
             id="Users"
             className="border-black border-2 p-2 rounded mt-2"
           >
-            <option value="" selected>
-              Choose
-            </option>
+            <option value="">Choose</option>
             {selectContent}
-            <div className="text-left text-red-500">
-              {errors?.userid?.message}
-            </div>
           </select>
+          <div className="text-left text-red-500">
+            {errors?.userid?.message}
+          </div>
         </div>
 
         {/*Body İnput */}
