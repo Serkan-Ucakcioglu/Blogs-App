@@ -1,8 +1,8 @@
 import React from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import EmojiList from "../../Emoji/EmojiList";
 import { useGetUsersQuery } from "../../users/usersSlice";
 import { useGetPostsQuery } from "../postSlice";
+import PostDetailList from "./PostDetailList";
 
 function PostDetail() {
   const { id } = useParams();
@@ -19,22 +19,11 @@ function PostDetail() {
     }),
   });
 
-  const content = data?.map((post) => (
-    <div
-      className="flex flex-col mt-3 justify-center items-center w-80 h-48 bg-gray-500 font-extrabold text-white rounded"
-      key={post.id}
-    >
-      <h1>{post?.title}</h1>
-      <div className="flex flex-row">👥 - {users?.name}</div>
-      <span>{post?.body}</span>
-      <span>🕑 {post?.date.substring(0, 10)}</span>
-      <EmojiList post={post} />
-    </div>
-  ));
-
   return (
     <div className="flex flex-col items-center mt-5">
-      {content}
+      {data?.map((post) => (
+        <PostDetailList post={post} users={users} />
+      ))}
       <button
         className="mt-5 border border-black rounded p-2"
         onClick={() => navigate(-1)}
