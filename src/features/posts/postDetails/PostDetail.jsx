@@ -1,8 +1,8 @@
 import React from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import EmojiList from "../Emoji/EmojiList";
-import { useGetUsersQuery } from "../users/usersSlice";
-import { useGetPostsQuery } from "./postSlice";
+import EmojiList from "../../Emoji/EmojiList";
+import { useGetUsersQuery } from "../../users/usersSlice";
+import { useGetPostsQuery } from "../postSlice";
 
 function PostDetail() {
   const { id } = useParams();
