@@ -9,17 +9,17 @@ function NewPost() {
     reset,
     formState: { errors },
   } = useForm();
+
   const [addPost] = useAddPostMutation();
   const { data: users } = useGetUsersQuery();
+
   const onSubmit = (data) => {
     const date = new Date();
     const dates = date.toLocaleDateString();
-
     const req = {
       ...data,
       date: dates,
     };
-    console.log(req, "dates");
     addPost(req);
     reset();
   };
@@ -27,10 +27,12 @@ function NewPost() {
   const selectContent = users?.map((user) => {
     return <option value={user?.id}>{user?.name}</option>;
   });
+
   return (
     <div className="w-full flex justify-center mt-5">
       <form onSubmit={handleSubmit(onSubmit)} className="w-96">
         <div className="flex flex-col">
+          {/*Title  İnput */}
           <label htmlFor="title">Title</label>
           <input
             type="text"
@@ -45,6 +47,8 @@ function NewPost() {
           />
           <div className="text-left text-red-500">{errors?.title?.message}</div>
         </div>
+
+        {/*Users Select  */}
         <div className="flex flex-col mt-3">
           <label htmlFor="Users">Users</label>
           <select
@@ -57,11 +61,12 @@ function NewPost() {
             </option>
             {selectContent}
             <div className="text-left text-red-500">
-              {errors?.user?.message}
+              {errors?.userid?.message}
             </div>
           </select>
         </div>
 
+        {/*Body İnput */}
         <div className="flex flex-col mt-3">
           <label htmlFor="body">Body</label>
           <textarea
@@ -77,6 +82,8 @@ function NewPost() {
           />
           <div className="text-left text-red-500">{errors?.body?.message}</div>
         </div>
+
+        {/*Submit  Button */}
         <button
           type="submit"
           className="bg-blue-500 mt-5 w-full rounded text-white p-2"
