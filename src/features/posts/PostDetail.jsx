@@ -1,19 +1,12 @@
 import React from "react";
 import { useNavigate, useParams } from "react-router-dom";
+import EmojiList from "../Emoji/EmojiList";
 import { useGetUsersQuery } from "../users/usersSlice";
-import { useAddReactionMutation, useGetPostsQuery } from "./postSlice";
+import { useGetPostsQuery } from "./postSlice";
 
-const emoji = {
-  thumbsUp: "👍",
-  wow: "😮",
-  heart: "❤️",
-  rocket: "🚀",
-  coffee: "☕",
-};
 function PostDetail() {
   const { id } = useParams();
   const navigate = useNavigate();
-  const [addReaction] = useAddReactionMutation();
   const { data } = useGetPostsQuery("getUsers", {
     selectFromResult: ({ data }) => ({
       data: data?.filter((users) => Number(users?.id) === Number(id)),
@@ -37,26 +30,7 @@ function PostDetail() {
           <div className="flex flex-row">👥 - {users?.name}</div>
           <span>{post?.body}</span>
           <span>🕑 {post?.date.substring(0, 10)}</span>
-          <div className="flex ">
-            {Object.entries(emoji).map(([key, value]) => {
-              return (
-                <button
-                  className="ml-2"
-                  onClick={() => {
-                    addReaction({
-                      id: post.id,
-                      reactions: {
-                        ...post.reactions,
-                        [key]: post.reactions[key] + 1,
-                      },
-                    });
-                  }}
-                >
-                  {value} {post.reactions[key]}
-                </button>
-              );
-            })}
-          </div>
+          <EmojiList post={post} />
         </div>
       ))}
       <button
