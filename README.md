@@ -4,16 +4,17 @@ json-server --watch db.json --port 3500 <br>
 yarn start
 
 ### Home Page
-<img width="1800" alt="image" src="https://user-images.githubusercontent.com/98692987/203945240-1c4f2a12-3ca5-400c-b560-b27212066b88.png">
+<img width="1793" alt="image" src="https://user-images.githubusercontent.com/98692987/204135779-8e5af316-57b8-440a-9987-f08c76c767e3.png">
 
 ### Add-Post Page
-<img width="1785" alt="image" src="https://user-images.githubusercontent.com/98692987/203945279-4efe4468-00e1-48a4-9e2c-1b636ba68b92.png">
+<img width="1798" alt="image" src="https://user-images.githubusercontent.com/98692987/204135793-9c0e8b77-a3c5-4f57-bfa3-9ee1d31119cc.png">
 
 ### User-List Page
-<img width="1800" alt="image" src="https://user-images.githubusercontent.com/98692987/203945337-ce8e92d0-b787-4cdc-8a82-50db400290b7.png">
-
+<img width="1783" alt="image" src="https://user-images.githubusercontent.com/98692987/204135805-eaab752b-f018-4ead-8da6-95af7e0c3a5f.png">
 ### User Post List Page
-<img width="1800" alt="image" src="https://user-images.githubusercontent.com/98692987/203945382-92a91f97-4b8a-4080-9e91-6cbe4c64a0c9.png">
+<img width="1799" alt="image" src="https://user-images.githubusercontent.com/98692987/204135818-94ed79a9-96d8-4d07-a55d-9d4523624824.png">
+<br>
+<img width="1800" alt="image" src="https://user-images.githubusercontent.com/98692987/204135835-825317b0-95e9-4cd6-9ca3-97a722b1d4e9.png">
 
 ### User Post Detail Page
-<img width="1800" alt="image" src="https://user-images.githubusercontent.com/98692987/203945454-0eabd9d9-0ca7-41c6-87f9-1c351504ec60.png">
+<img width="1798" alt="image" src="https://user-images.githubusercontent.com/98692987/204135854-043bf101-aeb6-4968-9f5e-753499dc0649.png">
