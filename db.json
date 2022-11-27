@@ -239,9 +239,9 @@
       "date": "2022-11-26T08:30:21.877Z",
       "id": 1669451421877,
       "reactions": {
-        "thumbsUp": 1,
+        "thumbsUp": 2,
         "wow": 0,
-        "heart": 0,
+        "heart": 1,
         "rocket": 0,
         "coffee": 0
       }
@@ -255,7 +255,7 @@
       "reactions": {
         "thumbsUp": 4,
         "wow": 0,
-        "heart": 0,
+        "heart": 1,
         "rocket": 1,
         "coffee": 0
       }

@@ -1,4 +1,3 @@
-import React from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { useGetUsersQuery } from "../../users/usersSlice";
 import { useGetPostsQuery } from "../postSlice";
@@ -12,6 +11,7 @@ function PostDetail() {
       data: data?.filter((users) => Number(users?.id) === Number(id)),
     }),
   });
+
   const userid = Number(data?.map((user) => user.userid));
   const { data: users } = useGetUsersQuery("getUsers", {
     selectFromResult: ({ data }) => ({

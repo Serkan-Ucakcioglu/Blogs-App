@@ -26,11 +26,7 @@ function EmojiList({ post }) {
       </button>
     );
   });
-  return (
-    <>
-      <div className="flex">{emojiList}</div>
-    </>
-  );
+  return <div className="flex">{emojiList}</div>;
 }
 
 export default EmojiList;

@@ -1,4 +1,3 @@
-import React from "react";
 import EmojiList from "../../Emoji/EmojiList";
 
 function PostDetailList({ post, users }) {
