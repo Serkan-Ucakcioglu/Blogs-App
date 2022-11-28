@@ -10,7 +10,7 @@ function NewPost() {
     formState: { errors },
   } = useForm();
 
-  const [addPost] = useAddPostMutation();
+  const [addPost, { isSuccess, isError }] = useAddPostMutation();
   const { data: users } = useGetUsersQuery();
 
   const onSubmit = (data) => {
@@ -21,7 +21,13 @@ function NewPost() {
       date: dates,
     };
     addPost(req);
-    reset();
+    if (isSuccess) {
+      alert("Başarıyla Eklendi");
+      reset();
+    }
+    if (isError) {
+      return alert("Eklenemedi");
+    }
   };
 
   const selectContent = users?.map((user) => {
