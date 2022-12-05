@@ -12,12 +12,15 @@ function PostList({ post }) {
 
   return (
     <>
-      <div className="flex flex-col mt-3 justify-center items-center w-80 h-48 bg-gray-500 font-extrabold text-white rounded">
-        <h1>{post?.title}</h1>
+      <div className="flex gap-2 flex-col mt-3 justify-center items-center w-80 h-60 bg-purple-700 text-white rounded">
+        <h1 className="font-extrabold text-2xl">{post?.title}</h1>
         <div className="flex flex-row">👥 - {data?.name}</div>
-        <span>{post?.body.substring(0, 8)}...</span>
-        <span>🕑 {post?.date.substring(0, 10)}</span>
-        <Link to={`postdetail/${post.id}`} className="underline p-2">
+        <p>{post?.body.substring(0, 8)}...</p>
+        <p>🕑{post?.date.substring(0, 10)}</p>
+        <Link
+          to={`postdetail/${post.id}`}
+          className="underline p-2 font-extrabold"
+        >
           View Post
         </Link>
         <EmojiList post={post} />
