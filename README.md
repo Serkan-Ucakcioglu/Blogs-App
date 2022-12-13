@@ -1,7 +1,7 @@
 ### To start the project
 npm or yarn install <br>
 json-server --watch db.json --port 3500 <br>
-yarn start
+yarn start || npm start 
 
 ### Home Page
 <img width="1793" alt="image" src="https://user-images.githubusercontent.com/98692987/204135779-8e5af316-57b8-440a-9987-f08c76c767e3.png">
