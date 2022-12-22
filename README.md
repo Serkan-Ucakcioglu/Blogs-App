@@ -1,4 +1,4 @@
-### To start the project
+### Start the project
 npm or yarn install <br>
 json-server --watch db.json --port 3500 <br>
 yarn start || npm start 
