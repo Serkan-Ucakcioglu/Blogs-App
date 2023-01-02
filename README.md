@@ -16,5 +16,5 @@ yarn start || npm start
 <br>
 <img width="1800" alt="image" src="https://user-images.githubusercontent.com/98692987/204135835-825317b0-95e9-4cd6-9ca3-97a722b1d4e9.png">
 
-### User Post Detail Page
+### User Post Detail Pages
 <img width="1798" alt="image" src="https://user-images.githubusercontent.com/98692987/204135854-043bf101-aeb6-4968-9f5e-753499dc0649.png">
